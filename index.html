@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="icon" href="IMG/programador.png" />
+    <title>Personal_Web</title>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header>
+      <div class="header-content">
+        <div class="contact">
+          <button type="button" class="btn btn-contacto">Contacto</button>
+        </div>
+        <div class="name">
+          <h1>Anniel Francisco <br />Reyes Javier</h1>
+          <span>Web Programming</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- MODAL CONTACTO -->
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span class="cerrar" id="cerrar-btn">&times;</span>
+        <h2>Contacto</h2>
+        <div class="datos">
+          <div><span class="dato">Teléfono:</span> 809-552-2198</div>
+          <div>
+            <span class="dato">Dirección:</span> Calle Rafael Z. García, El
+            Seibo, Rep. Dom., 24000
+          </div>
+          <div>
+            <span class="dato">Correo:</span>
+            <a href="mailto:20220147@itla.edu.do">20220147@itla.edu.do</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MODAL VIDEO -->
+
+    <div id="modalVideo" class="modal">
+      <div class="modal-content modal-video">
+        <span class="cerrar" id="cerrarVideo-btn">&times;</span>
+        <h2>Video</h2>
+
+        <iframe
+          src="https://www.youtube.com/embed/n9VfMdgbz9s?si=Yw-6rQbj0hxf1yTS"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </div>
+
+    <!-- MAIN -->
+    <main class="main">
+      <div class="hobbies">
+        <div>
+          <h2>Hobbies</h2>
+        </div>
+        <div class="descripcion-hobbies">
+          <p>
+            Me gusta ver peliculas y series. También, me gusta ver videos en
+            YouTube, ya sean informativos, videojuegos, tecnologias, entre
+            otros. Además, practico mis conocimientos en el ambito web, pues me
+            gusta desarrollar mis ideas y ver el resultado.
+          </p>
+          <div>
+            <button type="button" class="btn btn-video">
+              Ver video <img src="IMG/arrow.png" alt="" class="arrow" />
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="div-foto">
+        <img class="foto" src="IMG/FOTO.jpg" alt="" />
+      </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div>by Anniel Francisco</div>
+      <div class="image-whatsapp">
+        <img src="IMG/whatsapp.png" alt="" width="20px" /><span
+          >+1 (829) 574-3179</span
+        >
+      </div>
+    </footer>
+  </body>
+
+  <script>
+    //Modal
+    let modal = document.getElementById("modal");
+    let contactBtn = document.querySelector(".btn-contacto");
+    let closeBtn = document.getElementById("cerrar-btn");
+
+    contactBtn.addEventListener("click", function () {
+      modal.style.display = "block";
+    });
+
+    closeBtn.addEventListener("click", function () {
+      modal.style.display = "none";
+    });
+
+    //Video
+
+    let modalVideo = document.getElementById("modalVideo");
+    let videoBtn = document.querySelector(".btn-video");
+    let closeVideoBtn = document.getElementById("cerrarVideo-btn");
+
+    videoBtn.addEventListener("click", function () {
+      modalVideo.style.display = "block";
+    });
+
+    closeVideoBtn.addEventListener("click", function () {
+      modalVideo.style.display = "none";
+    });
+  </script>
+</html>

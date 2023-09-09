@@ -1,0 +1,302 @@
+*{
+          box-sizing: border-box;
+          padding: 0;
+          margin: 0;
+}
+body{
+       
+          font-family: 'Roboto', sans-serif;
+          position: relative;
+          padding-bottom: 2em;
+          min-height: 100vh;
+
+}
+/* HEADER */
+.header-content{
+        
+          flex: 1 1 auto;
+          justify-content: space-evenly;
+          background-image: url('../IMG/main-background.png');
+          background-position: bottom;
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          min-height: 60vh;
+}
+.contact{
+          display: flex;
+          justify-content: flex-end;
+          padding: 20px 130px 0 0;
+
+}
+
+.btn{
+          cursor: pointer;
+          background-color: transparent;
+          color: white;
+          border: none;
+          padding: 10px;
+          text-transform: uppercase;
+          border-radius: 30px;
+          transition: all .5s ease;
+          font-weight: 700;
+
+        
+}
+
+.btn-contacto:hover{
+          background-color:#61d191;
+          color: white;
+
+}
+
+.btn-video{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 40%;
+          background-color:#61d191;
+          color: white;
+
+}
+
+.name{
+          display: flex;
+          text-align: center;
+          align-items: center; 
+          flex-direction: column; 
+          width: 100%;
+          justify-content: center;
+          color: white;
+          font-size: 7vmin;
+          min-height: 60vh;
+          background-color: #111111;
+          transition: all .5s ease;
+         line-height: 100px;
+}
+
+
+.name:hover {
+          opacity: 0;
+}
+
+.name span{
+          color: #61d191;
+          font-weight: 700;
+}
+        
+
+
+/* Estilo Modal */
+
+.modal {
+          display: none;
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: rgba(0, 0, 0, 0.5);
+          z-index: 1;
+          justify-content: center;
+          align-items: center;
+          padding: 15px;
+        }
+    
+        .modal-content {
+          background-color: #fff;
+          padding: 15px;
+          border-radius: 5px;
+          position: relative;
+          top: 50%;
+          width: 40%; 
+          margin-left: auto;
+          margin-right: auto;
+          transform: translateY(-50%);
+        }
+
+
+        .modal-content iframe {
+          width: 100%;
+          height: 400px;
+          max-width: 100% ;
+        }
+
+        .modal-video{
+          width: 60%;
+        }
+        
+     
+        .cerrar {
+          position: absolute;
+          top: 10px;
+          right: 10px;
+          font-size: 25px;
+          cursor: pointer;
+          border-radius: 30px;
+          width: 30px;
+          text-align: center;
+        }
+
+        .cerrar:hover {
+          color: white;
+          background-color: #61d191;
+        }
+        
+        .datos div:nth-child(3) a{
+          text-decoration: none;
+          color: black;
+        }
+        .datos div:nth-child(3) a:hover{
+          text-decoration: underline;
+        }
+
+        .datos div{
+          background-color: rgb(235, 234, 234);
+          margin: 18px;
+          padding: 5px;
+          border-radius: 15px;
+          text-align: center;
+          transition: all .5s ease;
+        }
+
+        .datos div:hover{
+          background-color: #61d191;
+        }
+
+        .dato {
+          font-weight: 600;
+        }
+
+/* MAIN */
+
+.main{
+          display: flex;
+          align-items: center;
+          flex-wrap: wrap;
+          justify-content: space-evenly;
+          margin-left: auto;
+          margin-right: auto;
+          height: 100vh;
+          width: 70%;
+         
+         
+}
+
+
+
+.hobbies{
+          width: 50%;
+          line-height: 40px;
+}
+
+.hobbies h2{
+          font-size: 30px;
+          color: #61d191;
+}
+.descripcion-hobbies{
+          width: 100%;
+          font-size: 20px;
+          text-align: justify;
+}
+
+.arrow{
+          width: 20px;
+          filter:  brightness(900%);
+          margin-left: 15px;
+          transform: rotate(270deg) ;
+}
+
+.foto{
+       
+          transition: all .5s ease;
+          border-radius: 20px;
+         
+}
+
+.foto:hover{
+          box-shadow: 0px 0px 15px 2px #61d191;
+}
+
+/* FOOTER */
+.footer{
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-around;
+          align-items: center;
+          position: absolute;
+          bottom: 0;
+          width: 100%;
+          background-color: #111111;
+          height: 70px;
+          color: white;
+          padding: 10px;
+}
+
+.image-whatsapp{
+          display: flex;
+          align-items: center;
+          gap: 5px;
+}
+
+
+
+/* Estilo Resposive */
+@media (max-width: 768px){
+          .contact{
+                    padding-right: 20px;
+          }
+
+          .name{
+                    line-height: 80px;
+          }
+
+          .modal-content {
+                   
+                    width: 80%; 
+                  
+                  }
+
+                  .main{
+                    margin-top: 30px;
+                    width: 85%;
+                  }
+                  .hobbies{
+                    width: 90%;
+                  }
+
+
+                  body{
+                    padding-bottom: 5em;
+                    
+                  }
+                  .foto{
+                    width: 170px;
+                  }
+               
+                  .footer{
+          justify-content: space-between;
+
+
+                  }
+          
+
+                  .btn-video{
+                    width: 60%;
+                  }
+
+                 
+               
+}
+
+/* @media (max-width: 1024px){
+          .name{
+                    line-height: 140px;
+          }
+          .contact{
+                   
+                    padding-right:  20px ;
+          
+          }
+} */
+
