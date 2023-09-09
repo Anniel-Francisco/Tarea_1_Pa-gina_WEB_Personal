@@ -285,27 +285,24 @@ body{
                
                   .footer{
           justify-content: space-between;
-
-
                   }
           
-
                   .btn-video{
                     width: 60%;
                   }
+    
+                  
+                  .modal-video{
+                    width: 90%;
+                  }
+                  
 
-                 
+        .modal-content iframe {
+          height: 200px;
+        
+        }
                
 }
 
-/* @media (max-width: 1024px){
-          .name{
-                    line-height: 140px;
-          }
-          .contact{
-                   
-                    padding-right:  20px ;
-          
-          }
-} */
+
 
