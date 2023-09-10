@@ -1,5 +1,5 @@
 # Tarea_1_Pagina_WEB_Personal
-Primera asignación de programación web - personal web 
+Primera asignación de programación web - personal web - 
 Anniel Francisco Reyes Javier | 2022-0147
 
 [captura de pantalla 1](captura-1.png)
