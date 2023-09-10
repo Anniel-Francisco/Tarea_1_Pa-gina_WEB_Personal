@@ -1,5 +1,5 @@
 # Tarea_1_Pagina_WEB_Personal
-First web programming assignment - personal web
+Primera asignación de programación web - personal web
 
 [captura de pantalla 1](captura-1.png)
 [captura de pantalla 2](captura-2.png)
